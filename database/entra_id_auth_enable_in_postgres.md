@@ -38,7 +38,10 @@ To set the Microsoft Entra admin during server provisioning, follow these steps:
   > You can add only one Azure admin user during server provisioning. You can add multiple Microsoft Entra admin users after the Server is created.
 
 
-  :::image type="content" source="https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/media/how-to-configure-sign-in-Azure-ad-authentication/set-Azure-ad-admin-server-creation.png" alt-text="Screenshot that shows selections for setting a Microsoft Entra admin during server provisioning.]":::
+
+<img src="https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/media/how-to-configure-sign-in-Azure-ad-authentication/set-Azure-ad-admin-server-creation.png"
+     alt="Screenshot that shows selections for setting a Microsoft Entra admin during server provisioning."
+     style="margin-right: 10px;" />  
 
 
 
@@ -49,7 +52,11 @@ To set the Microsoft Entra administrator after server creation, follow these ste
 3. Select **Add Microsoft Entra Admins**. Then select a valid Microsoft Entra user, group, service principal, or managed identity in the customer tenant to be a Microsoft Entra administrator.
 4. Select **Save**.
 
-  :::image type="content" source="https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/media/how-to-configure-sign-in-Azure-ad-authentication/set-Azure-ad-admin.png" alt-text="Screenshot that shows selections for setting a Microsoft Entra admin after server creation.":::
+
+
+  <img src="https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/media/how-to-configure-sign-in-Azure-ad-authentication/set-Azure-ad-admin.png"
+     alt="Screenshot that shows selections for setting a Microsoft Entra admin after server creation."
+     style="margin-right: 10px;" />  
 
 > [!IMPORTANT]  
 > When setting the administrator, a new user is added to Azure Database for PostgreSQL flexible server with full administrator permissions.
@@ -59,7 +66,11 @@ To set the Microsoft Entra administrator after server creation, follow these ste
 
 The following high-level diagram summarizes the workflow of using Microsoft Entra authentication with Azure Database for PostgreSQL:
 
-  :::image type="content" source="https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/media/how-to-configure-sign-in-Azure-ad-authentication/authentication-flow.png" alt-text="Diagram of authentication flow between Microsoft Entra ID, the user's computer, and the server.":::
+
+
+<img src="https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/media/how-to-configure-sign-in-Azure-ad-authentication/authentication-flow.png"
+     alt="Diagram of authentication flow between Microsoft Entra ID, the user's computer, and the server."
+     style="margin-right: 10px;" />  
 
 Microsoft Entra integration works with standard PostgreSQL tools like psql, which aren't Microsoft Entra aware and support only specifying the username and password when you're connecting to PostgreSQL. As shown in the preceding diagram, the Microsoft Entra token is passed as the password.
 
